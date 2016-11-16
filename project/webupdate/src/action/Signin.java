@@ -4,7 +4,9 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
+import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
+import com.sun.javafx.collections.MappingChange.Map;
 public class Signin extends ActionSupport{
 	private String signuser;
 	private String signpass;
@@ -27,6 +29,9 @@ public class Signin extends ActionSupport{
 			rs = stmt.executeQuery();
 			if(rs.next())
 			{
+				ActionContext actionContext = ActionContext.getContext();
+		        java.util.Map<String, Object> session = actionContext.getSession();
+		        session.put("UserID", "signuser");
 				System.out.println("µÇÂ¼³É¹¦");
 				return "loginin";
 			}

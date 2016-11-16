@@ -32,15 +32,22 @@
 		</div>
 	</nav>
 	<section class="container">
-		<form onsubmit="submitFn(this, event);">
+		<form action="Addwebs"  method="post" onsubmit="submitFn(this, event);" name="form">
             <div class="search-wrapper">
                 <div class="input-holder">
-                    <input name="userurl" type="text" class="search-input" placeholder="输入要添加的网页URL" />
-                    <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+                    <input name="userurl" type="text" class="search-input" placeholder="输入要添加的网页URL">
+                   <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
                 </div>
-                <span class="close" onclick="searchToggle(this, event);"></span>
+                <script>
+                var count = 0;
+                document.getElementById("tijiao").addEventListener("click",function(e){
+                	e.preventDefault();
+   					count++;
+   					if(count>1)
+                	void(document.form.submit());
+                } );</script>
+                <span class="close" onclick="searchToggle(this, event);" ></span>
                 <div class="result-container">
-
                 </div>
             </div>
         </form>
