@@ -1,4 +1,8 @@
 package action;
+
+//新建用户功能实现
+
+
 import model.User;
 import java.sql.*;
 import com.opensymphony.xwork2.ActionSupport;

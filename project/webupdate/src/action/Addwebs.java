@@ -8,6 +8,10 @@ import java.sql.ResultSet;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 
+
+//此处仍然需要更改，添加功能。	
+
+
 public class Addwebs extends ActionSupport{
 	private String userurl;
 	private Object username;

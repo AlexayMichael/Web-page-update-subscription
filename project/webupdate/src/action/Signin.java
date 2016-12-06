@@ -1,4 +1,6 @@
 package action;
+
+//登陆界面仍然有待进一步优化。
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;

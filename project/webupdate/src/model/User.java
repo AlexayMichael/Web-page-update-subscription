@@ -1,5 +1,6 @@
 package model;
 
+//暂定存储这些数据。
 
 public class User {
 	private String usename;
