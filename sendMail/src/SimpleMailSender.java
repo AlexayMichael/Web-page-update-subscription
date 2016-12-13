@@ -95,7 +95,13 @@ public class SimpleMailSender  {
 	          mainPart.addBodyPart(html);   
 	          // 将MiniMultipart对象设置为邮件内容   
 	          mailMessage.setContent(mainPart);   
-	          
+	          // 发送邮件   
+	          Transport.send(mailMessage);   
+	          return true;   
+	          } catch (MessagingException ex) {   
+	              ex.printStackTrace();   
+	          }   
+	          return false; 
 	    }   
 	    
 }
