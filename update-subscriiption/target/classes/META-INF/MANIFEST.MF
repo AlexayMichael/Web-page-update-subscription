@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Implementation-Title: CommaFeed
+Implementation-Version: 2.4.0-SNAPSHOT
+Built-By: Alex Michael
+Implementation-Vendor-Id: com.commafeed
+Build-Jdk: 1.8.0_101
+Created-By: Maven Integration for Eclipse
+
