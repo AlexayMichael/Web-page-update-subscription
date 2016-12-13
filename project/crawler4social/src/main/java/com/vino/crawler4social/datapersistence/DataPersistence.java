@@ -73,8 +73,7 @@ public class DataPersistence {
 			file.createNewFile();
 			System.out.println("createNewFile" + file.getName());
 		}
-		FileOutputStream fos = new FileOutputStream(file, true);// true保证每次输入的时候是追加而不是覆盖
-		PrintWriter bw = new PrintWriter(fos, true);
+		FileOutputStream fos = new FileOutputStream(file, true);		PrintWriter bw = new PrintWriter(fos, true);
 
 		bw.println(content);
 		;
