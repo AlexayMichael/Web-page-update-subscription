@@ -84,8 +84,7 @@ public class HtmlHandler {
 		
 			// 处理原创
 			for (int i = 0; i < eles.size() - 2; i++) {
-				//清楚赞，评论等信息，因为该信息会一直在变导致数据库中content值会一直变化，错误更新
-				content = eles.get(i).text().substring(0,eles.get(i).text().indexOf("赞["));
+					content = eles.get(i).text().substring(0,eles.get(i).text().indexOf("赞["));
 				timeAndDeviceText = timeAndDevice.get(i).text();
 				if (!dataPersistence.queryInDatabaseByContent(content)) {
 
