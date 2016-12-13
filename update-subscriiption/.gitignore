@@ -1,0 +1,34 @@
+# config gile
+config.yml
+
+# build directory
+target
+
+# log files
+log
+
+# jetty sessions
+sessions
+
+# node
+node
+node_modules
+
+# bower
+src/main/app/lib
+
+# Eclipse files
+.project
+.classpath
+.settings
+.factorypath
+
+# IntelliJ Idea files
+.idea
+*.iml
+
+# Sublime
+*.sublime*
+
+# Macs
+*.DS_Store
