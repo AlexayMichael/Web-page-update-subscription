@@ -57,4 +57,21 @@ public class SimpleMailSender  {
 	      }   
 	      return false;   
 	    }   
+	    /**  
+	      * 以HTML格式发送邮件  
+	      * @param mailInfo 待发送的邮件信息  
+	      */   
+	    public static boolean sendHtmlMail(MailSenderInfo mailInfo){   
+	      // 判断是否需要身份认证   
+	      MyAuthenticator authenticator = null;  
+	      Properties pro = mailInfo.getProperties();  
+	      //如果需要身份认证，则创建一个密码验证器    
+	      if (mailInfo.isValidate()) {   
+	        authenticator = new MyAuthenticator(mailInfo.getUserName(), mailInfo.getPassword());  
+	      }   
+	      // 根据邮件会话属性和密码验证器构造一个发送邮件的session   
+	      Session sendMailSession = Session.getDefaultInstance(pro,authenticator);   
+	      
+	    }   
+	    
 }
