@@ -1,5 +1,7 @@
 package sendMail;
+
 //发件人设置
+
 import javax.mail.*;  
 public class MyAuthenticator extends Authenticator{  
     String userName=null;  

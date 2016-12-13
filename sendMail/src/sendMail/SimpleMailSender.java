@@ -17,11 +17,14 @@ import javax.mail.internet.MimeMultipart;
 /**  
 * 简单邮件（不带附件的邮件）发送器  
 */   
+
 public class SimpleMailSender  {   
-/**  
-  * 以文本格式发送邮件  
-  * @param mailInfo 待发送的邮件的信息  
-  */   
+	
+	
+	/**  
+	  * 以文本格式发送邮件  
+	  * @param mailInfo 待发送的邮件的信息  
+	  */   
     public boolean sendTextMail(MailSenderInfo mailInfo) {   
       // 判断是否需要身份认证   
       MyAuthenticator authenticator = null;   
@@ -57,6 +60,7 @@ public class SimpleMailSender  {
       }   
       return false;   
     }   
+    
     /**  
       * 以HTML格式发送邮件  
       * @param mailInfo 待发送的邮件信息  

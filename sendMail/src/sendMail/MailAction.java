@@ -1,5 +1,7 @@
 package sendMail;
 
+//修改这个类设置发送邮件的相关邮箱等
+
 public class MailAction {
 	@SuppressWarnings("static-access")
 	public static void main(String[] args){  
