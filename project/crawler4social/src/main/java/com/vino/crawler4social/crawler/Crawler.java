@@ -73,8 +73,7 @@ public class Crawler {
 			}
 			urlIndex++;
 			urlIndex = urlIndex % urls.size();
-			// 爬虫休息，避免过于频繁查询
-			try {
+						try {
 				Thread.sleep(6000);
 			} catch (InterruptedException e) {
 
