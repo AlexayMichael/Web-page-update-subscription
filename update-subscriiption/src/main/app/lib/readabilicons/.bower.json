@@ -1,0 +1,12 @@
+{
+  "name": "readabilicons",
+  "homepage": "https://github.com/arc90/readability-readabilicons",
+  "_release": "34c55561c5",
+  "_resolution": {
+    "type": "commit",
+    "commit": "34c55561c5b8ec6e90714b50237c06b13cb9d59c"
+  },
+  "_source": "git://github.com/arc90/readability-readabilicons.git",
+  "_target": "34c55561c5b8ec6e90714b50237c06b13cb9d59c",
+  "_originalSource": "arc90/readability-readabilicons"
+}

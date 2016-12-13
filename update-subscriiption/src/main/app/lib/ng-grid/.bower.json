@@ -1,0 +1,18 @@
+{
+  "name": "ng-grid",
+  "version": "2.0.6",
+  "main": [
+    "./ng-grid.min.css",
+    "./build/ng-grid.min.js"
+  ],
+  "homepage": "https://github.com/angular-ui/ng-grid",
+  "_release": "2.0.6",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.0.6",
+    "commit": "f1712cd74f8574fc6d3977ca0fcf3d40bceec47a"
+  },
+  "_source": "https://github.com/angular-ui/ng-grid.git",
+  "_target": "2.0.6",
+  "_originalSource": "ng-grid"
+}
